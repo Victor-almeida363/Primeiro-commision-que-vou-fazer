@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    }
+
+    .container{
+      background:#fff;
+      padding:40px;
+      width:350px;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .container h2{
+      text-align:center;
+      margin-bottom:25px;
+      color:#333;
+    }
+
+    .input-group{
+      margin-bottom:18px;
+    }
+
+    .input-group label{
+      display:block;
+      margin-bottom:6px;
+      color:#555;
+      font-size:14px;
+    }
+
+    .input-group input{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      outline:none;
+      transition:0.3s;
+    }
+
+    .input-group input:focus{
+      border-color:#4f46e5;
+      box-shadow:0 0 5px rgba(79,70,229,0.4);
+    }
+
+    .btn{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:8px;
+      background:#4f46e5;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Cadastro</h2>
+
+    <form>
+      <div class="input-group">
+        <label>CPF</label>
+        <input type="text" placeholder="000.000.000-00">
+      </div>
+
+      <div class="input-group">
+        <label>Endereço</label>
+        <input type="text" placeholder="Digite seu endereço">
+      </div>
+
+      <div class="input-group">
+        <label>E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail">
+      </div>
+
+      <button class="btn" type="submit">
+        Entrar
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>
